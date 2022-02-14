@@ -1,4 +1,4 @@
-package com.tz.mymemory
+package com.tz.kumbukumbu
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -1,4 +1,4 @@
-package com.tz.mymemory.models
+package com.tz.kumbukumbu.models
 
 enum class BoardSize (val numCards: Int){
     EASY(8),

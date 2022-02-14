@@ -1,6 +1,6 @@
-package com.tz.mymemory.models
+package com.tz.kumbukumbu.models
 
-import com.tz.mymemory.utils.DEFAULT_ICON
+import com.tz.kumbukumbu.utils.DEFAULT_ICON
 
 class MemoryGame(private val boardSize: BoardSize){
     val cards: List<MemoryCard>

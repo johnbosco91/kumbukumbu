@@ -1,4 +1,4 @@
-package com.tz.mymemory
+package com.tz.kumbukumbu
 
 import android.animation.ArgbEvaluator
 import android.os.Bundle
@@ -12,8 +12,9 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
-import com.tz.mymemory.models.BoardSize
-import com.tz.mymemory.models.MemoryGame
+import com.tz.kumbukumbu.models.BoardSize
+import com.tz.kumbukumbu.models.MemoryGame
+import kumbukumbu.R
 
 class MainActivity : AppCompatActivity() {
     companion object{
@@ -163,6 +164,4 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-private fun TextView.setTextColor(color: Any) {
 
-}

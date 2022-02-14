@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.tz.mymemory"
+        applicationId "com.tz.kumbukumbu"
         minSdk 21
         targetSdk 31
         versionCode 1

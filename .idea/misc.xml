@@ -7,10 +7,13 @@
         <entry key="app/src/main/res/drawable/ic_arrows.xml" value="0.2520833333333333" />
         <entry key="app/src/main/res/drawable/ic_bank.xml" value="0.2520833333333333" />
         <entry key="app/src/main/res/drawable/ic_baseline_alt_route_24.xml" value="0.11614583333333334" />
+        <entry key="app/src/main/res/drawable/ic_baseline_refresh_24.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/ic_baseline_wrong_location_24.xml" value="0.2078125" />
         <entry key="app/src/main/res/drawable/ic_case.xml" value="0.2520833333333333" />
         <entry key="app/src/main/res/drawable/ic_cicle_plus.xml" value="0.2520833333333333" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.371875" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_sports_esports.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/ic_subway.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/ic_swap_vertical_circle.xml" value="0.371875" />
         <entry key="app/src/main/res/drawable/ic_view_stream.xml" value="0.371875" />

@@ -1,4 +1,4 @@
-package com.tz.mymemory.models
+package com.tz.kumbukumbu.models
 
 data class MemoryCard(
     val identifier: Int,

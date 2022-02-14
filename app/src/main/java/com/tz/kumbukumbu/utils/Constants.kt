@@ -1,6 +1,7 @@
-package com.tz.mymemory.utils
+package com.tz.kumbukumbu.utils
 
-import com.tz.mymemory.R
+
+import kumbukumbu.R
 
 val DEFAULT_ICON = listOf(
     R.drawable.ic_arrows,

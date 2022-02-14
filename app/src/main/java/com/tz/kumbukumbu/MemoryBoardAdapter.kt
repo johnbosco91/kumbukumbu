@@ -1,4 +1,4 @@
-package com.tz.mymemory
+package com.tz.kumbukumbu
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -11,8 +11,9 @@ import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.tz.mymemory.models.BoardSize
-import com.tz.mymemory.models.MemoryCard
+import com.tz.kumbukumbu.models.BoardSize
+import com.tz.kumbukumbu.models.MemoryCard
+import kumbukumbu.R
 import kotlin.math.min
 
 
