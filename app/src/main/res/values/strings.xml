@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Kumbukumbu</string>
+    <string name="start">Anza</string>
+    <string name="moves">Rahisi: 4 x 2</string>
+    <string name="pair">Jozi: 0 / 4</string>
+    <string name="normal">Kawaida: 6 x 3</string>
+    <string name="pair_9">Jozi: 0 / 9</string>
+    <string name="hard">Ngumu: 6 x 6</string>
+    <string name="pair_12">Jozi: 0 / 12</string>
+    <string name="very_hard">Ngumu Sana: 6 x 8</string>
+    <string name="pair_24">Jozi: 0 / 24</string>
+    <string name="start_again">Unaanza upya?</string>
+    <string name="select_level">Chagua kiwango</string>
+    <string name="accept">Hapana</string>
+    <string name="accept_sawa">Sawa</string>
+    <string name="won">Ulishinda!</string>
+    <string name="not_ok">SI sahihi!</string>
+    <string name="pair22">Jozi: %d / %d</string>
+    <string name="moves22">Hatua: %d</string>
+    <string name="messaje_pass">Umeshinda! Hongera</string>
+    <string name="share_using">Share using</string>
+    <string name="share_subject">Checkout this memory app, can you play?</string>
+    <string name="share_body">https://play.google.com/store/apps/details?id=com.tz.kumbukumbu</string>
+    <string name="chagua_kiwango">Chagua Kiwango</string>
+    <string name="anza">Anza</string>
+    <string name="share">Share</string>
+
 </resources>

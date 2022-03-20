@@ -15,6 +15,9 @@ import com.google.android.material.snackbar.Snackbar
 import com.tz.kumbukumbu.models.BoardSize
 import com.tz.kumbukumbu.models.MemoryGame
 import kumbukumbu.R
+import android.content.Intent
+
+
 
 class MainActivity : AppCompatActivity() {
     companion object{
@@ -48,21 +51,21 @@ class MainActivity : AppCompatActivity() {
     private fun setupBoard() {
         when (boardSize){
             BoardSize.EASY -> {
-                tvMoves.text="Rahisi: 4 x 2"
-                tvPairs.text="Jozi: 0 / 4"
+                tvMoves.text=getString(R.string.moves)
+                tvPairs.text=getString(R.string.pair)
             }
 
             BoardSize.MEDIUM ->  {
-                tvMoves.text="Kawaida: 6 x 3"
-                tvPairs.text="Jozi: 0 / 9"
+                tvMoves.text=getString(R.string.normal)
+                tvPairs.text=getString(R.string.pair_9)
             }
             BoardSize.HARD -> {
-                tvMoves.text="Ngumu: 6 x 6"
-                tvPairs.text="Jozi: 0 / 12"
+                tvMoves.text=getString(R.string.hard)
+                tvPairs.text=getString(R.string.pair_12)
             }
             BoardSize.HARDEST -> {
-                tvMoves.text="Ngumu Sana: 6 x 8"
-                tvPairs.text="Jozi: 0 / 24"
+                tvMoves.text=getString(R.string.very_hard)
+                tvPairs.text=getString(R.string.pair_24)
             }
         }
 
@@ -87,7 +90,7 @@ class MainActivity : AppCompatActivity() {
        when(item.itemId){
            R.id.mi_refresh ->{
                if(memoryGame.getNumMoves() > 0 && !memoryGame.haveWonGame()){
-                   showAlertDialog("Unaanza upya?",null, View.OnClickListener {
+                   showAlertDialog(getString(R.string.start_again),null, View.OnClickListener {
                        setupBoard()
                    })
                }else{
@@ -98,6 +101,20 @@ class MainActivity : AppCompatActivity() {
            R.id.mi_new_size -> {
                showNewSizeDialog()
                return true
+           }
+           R.id.mi_share ->{
+               val sharingIntent = Intent(Intent.ACTION_SEND)
+               // type of the content to be shared
+               sharingIntent.type = "text/plain"
+               // Body of the content
+               val shareBody = R.string.share_body
+               // subject of the content. you can share anything
+               val shareSubject = R.string.share_subject
+               // passing body of the content
+               sharingIntent.putExtra(Intent.EXTRA_TEXT, shareBody)
+               // passing subject of the content
+               sharingIntent.putExtra(Intent.EXTRA_SUBJECT, shareSubject)
+               startActivity(Intent.createChooser(sharingIntent, R.string.share_using.toString()))
            }
 
        }
@@ -114,7 +131,7 @@ class MainActivity : AppCompatActivity() {
            BoardSize.HARDEST -> radioGroupSize.check(R.id.rd_hardest)
        }
 
-       showAlertDialog("Chagua kiwango", boardSizeView, View.OnClickListener {
+       showAlertDialog(getString(R.string.select_level), boardSizeView, View.OnClickListener {
         boardSize = when (radioGroupSize.checkedRadioButtonId){
             R.id.rd_easy -> BoardSize.EASY
             R.id.rd_medium ->  BoardSize.MEDIUM
@@ -129,20 +146,20 @@ class MainActivity : AppCompatActivity() {
        AlertDialog.Builder(this)
            .setTitle(title)
            .setView(view)
-           .setNegativeButton("Hapana", null)
-           .setPositiveButton("Sawa"){_,_->
+           .setNegativeButton(getString(R.string.accept), null)
+           .setPositiveButton(getString(R.string.accept_sawa)){ _, _->
                positiveClickListener.onClick(null)
            }.show()
     }
 
     private fun updateGameWithFlip(position: Int) {
         if(memoryGame.haveWonGame()){
-            Snackbar.make(clRoot, "Ulishinda!", Snackbar.LENGTH_LONG).show()
+            Snackbar.make(clRoot, getString(R.string.won), Snackbar.LENGTH_LONG).show()
             return
         }
 
         if(memoryGame.isCardFaceUp(position)){
-            Snackbar.make(clRoot, "SI sahihi!", Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(clRoot, getString(R.string.not_ok), Snackbar.LENGTH_SHORT).show()
             return
         }
         if(memoryGame.flipCard(position)){
@@ -153,12 +170,13 @@ class MainActivity : AppCompatActivity() {
             ) as Int
 
             tvPairs.setTextColor(color)
-            tvPairs.text = "Jozi: ${memoryGame.numPairsFound}/${boardSize.getNumPairs()}"
+            val pairStr = getString(R.string.pair22)
+            tvPairs.text = String.format(pairStr , memoryGame.numPairsFound, boardSize.getNumPairs())
             if(memoryGame.haveWonGame()){
-                Snackbar.make(clRoot, "Umeshinda! Hongera", Snackbar.LENGTH_LONG).show()
+                Snackbar.make(clRoot, getString(R.string.messaje_pass), Snackbar.LENGTH_LONG).show()
             }
         }
-        tvMoves.text = "Hatua: ${memoryGame.getNumMoves()}"
+        tvMoves.text = String.format(getString(R.string.moves22), memoryGame.getNumMoves())
         adapter.notifyDataSetChanged()
 
     }
