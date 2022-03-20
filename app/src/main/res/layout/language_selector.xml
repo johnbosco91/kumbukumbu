@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <RadioGroup
-        android:id="@+id/radio_group"
+        android:id="@+id/radio_group_lan"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -16,27 +16,15 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/rd_easy"
+            android:id="@+id/rd_swa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/rahisi_4_x_2" />
+            android:text="SWAHILI" />
 
         <RadioButton
-            android:id="@+id/rd_medium"
+            android:id="@+id/rd_en"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/kawaida_6_x_3" />
-
-        <RadioButton
-            android:id="@+id/rd_hard"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ngumu_6_x_4" />
-
-        <RadioButton
-            android:id="@+id/rd_hardest"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/ngumu_sana_8_x_6" />
+            android:text="ENGLISH" />
     </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>

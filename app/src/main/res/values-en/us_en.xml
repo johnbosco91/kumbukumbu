@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Memory</string>
+    <string name="start">Start</string>
+    <string name="moves">Simple: 4 x 2</string>
+    <string name="pair">Pair: 0 / 4</string>
+    <string name="normal">Normal: 6 x 3</string>
+    <string name="pair_9">Pair: 0 / 9</string>
+    <string name="hard">Hard: 6 x 6</string>
+    <string name="pair_12">Pair: 0 / 12</string>
+    <string name="very_hard">Hardest: 6 x 8</string>
+    <string name="pair_24">Pair: 0 / 24</string>
+    <string name="start_again">Start?</string>
+    <string name="select_level">Select level</string>
+    <string name="accept">No</string>
+    <string name="accept_sawa">Yes</string>
+    <string name="won">You won!</string>
+    <string name="not_ok">Not Correct!</string>
+    <string name="pair22">Pair: %d / %d</string>
+    <string name="moves22">Moves: %d</string>
+    <string name="messaje_pass">You won! Congratulation</string>
+    <string name="share_using">Share using</string>
+    <string name="share_subject">Checkout this memory app, can you play?</string>
+    <string name="share_body">https://play.google.com/store/apps/details?id=com.tz.kumbukumbu</string>
+    <string name="chagua_kiwango">Select level</string>
+    <string name="anza">Start</string>
+    <string name="share">Share</string>
+    <string name="badili_lugha">Badili Lugha</string>
+
+    <string name="rahisi_4_x_2">Simple (4 x 2)</string>
+    <string name="kawaida_6_x_3">Normal (6 x 3)</string>
+    <string name="ngumu_6_x_4">Hard (6 x 4)</string>
+    <string name="ngumu_sana_8_x_6">Very Hard (8 x 6)</string>
+</resources>

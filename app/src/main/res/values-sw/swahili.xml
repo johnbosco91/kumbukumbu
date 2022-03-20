@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kumbukumbu</string>
     <string name="start">Anza</string>
@@ -19,12 +20,13 @@
     <string name="moves22">Hatua: %d</string>
     <string name="messaje_pass">Umeshinda! Hongera</string>
     <string name="share_using">Share using</string>
-    <string name="share_subject">Checkout this memory app, can you play?</string>
+    <string name="share_subject">Angalia app hii, unaweza kucheza?</string>
     <string name="share_body">https://play.google.com/store/apps/details?id=com.tz.kumbukumbu</string>
     <string name="chagua_kiwango">Chagua Kiwango</string>
     <string name="anza">Anza</string>
     <string name="share">Shirikisha</string>
-    <string name="badili_lugha">Change Language</string>
+    <string name="badili_lugha">Change language</string>
+
     <string name="rahisi_4_x_2">Rahisi (4 x 2)</string>
     <string name="kawaida_6_x_3">Kawaida (6 x 3)</string>
     <string name="ngumu_6_x_4">Ngumu (6 x 4)</string>
